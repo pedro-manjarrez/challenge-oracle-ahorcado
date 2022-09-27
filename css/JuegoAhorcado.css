@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+html{
+    position: relative;
+    width: 100%;
+}
+body{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #444;
+}
+
+.TituloJuego{
+    border: 2px solid;
+    margin: auto;
+    text-align: center;
+    background-color: #b0bbc7;
+}
+
+.Logo{
+    border: 2px solid;
+    margin: auto;
+    background-color: #5597dd;
+}
+
+.contenedor_footer{
+    border: 2px solid;
+    margin: auto;
+    background-color: #063970;
+    text-align: center;
+}
+
+
+.contenedor-logo{
+    display: block;
+    width: 100%;
+    
+}
+.logo{
+    width: 5rem;
+    height: 3rem;
+    margin: 10px 0;
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px white;
+}
+h1 span{
+    color: #0a3871;
+}
+main{
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    padding-bottom: 3rem;
+}
+
+.seccion1{
+    width: 100%;
+    background-color: #b0bbc7;
+    margin-top: 0px;
+}
+.contenedor-canvas{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /*margin-top: 4rem;*/
+    box-sizing: border-box;
+    width: 40%;
+    height: 400px;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    min-width: 16rem;
+    
+}
+
+
+.frente-canvas{
+    width: 250px;
+    height: 400px;
+    border-radius: 25px;
+    backface-visibility: hidden;
+    position: absolute;
+    opacity: .9;
+    color: #fff;
+}
+.rotar{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+canvas{
+    width: 250px;
+    /* width: 100%; */
+    height: 400px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    opacity: .9;
+    border: 2px solid;
+}
+
+.cont_letras_correct{
+    font-size: 36px;
+    text-align: center;
+    min-height: 2rem;
+    color: black;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.letra-bien{
+    width: 28px;
+    height: 2.5rem;
+    display: inline-block;
+    border-bottom: 4px solid black;
+    text-shadow: 2px 2px 2px white;
+    vertical-align: bottom;
+    margin: 0 5px;
+}
+
+.cont_letras_incorrect{
+    font-size: 25px;
+    color: #0a3871;
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    padding-top: 5px;
+    
+
+}
+
+.letras-mal{
+    width: 25px;
+    display: inline-block;
+    /*background-color: #000; */
+    border-radius: 5px;
+    padding:0 3px;
+    margin: 1px 5px;
+    opacity: .8;
+}
+
+.teclas{
+    display: block;
+    text-align: center;
+
+}
+.teclado-pantalla{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    opacity: .8;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.key{
+    width: 15px;
+    display: inline-block;
+    color: #fff;
+    margin: 3px;
+    padding: 2px;
+    /* background-image: url(../img/fondoDra0.jpg); */
+    background:linear-gradient(#0a3871, #111, #0a3871);
+    border-radius: 3px;
+}
+
+.key:active{
+    filter: contrast(2);
+}
+
+.teclado{
+    width: 70px;
+    height: 50px;
+}
+.teclado:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #0a3871;
+}
+.teclado:active{
+    filter: brightness(4);
+}
+
+.contenedor-botones{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+.btn-nuevo, .btn-desistir{
+    text-decoration:none;
+    font-weight:400;
+    font-size:20px;
+    color:#000000;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: #1565C0;
+    border: 2px solid black;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.btn-nuevo:hover, .btn-desistir:hover,
+ .btn-agregar:hover, .btn-iniciar:hover,
+ .btn-aceptar:hover, .btn-cancelar:hover{
+    text-decoration:none;
+    font-weight:400;
+    font-size:20px;
+    
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color: #1565C0;
+    border: 2px solid black;
+    border-radius: 50px;
+    align-items: center;
+} 
+    
+
+
+.seccion2{
+    width: 100%;
+}
+
+.contenedor-botones-inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.btn-iniciar, .btn-agregar{
+    width: 20%;
+    height: 4rem;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid black;
+    outline: none;
+    min-width: 14rem;
+    /*text-shadow: 2px 2px 2px #232323;*/
+    background:linear-gradient(#0a3871, #111, #0a3871);
+}
+
+.btn-agregar{
+    font-size: 24px;
+    margin: 1rem 0;
+    background:linear-gradient(#0a3871, #111, #0a3871);
+}
+
+.contenedor-texto{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3rem;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.fondo-negro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border-radius: 25px;
+    margin: 0 auto;
+    background-color: #000;
+    opacity: .8;
+    box-sizing: border-box;
+}
+
+
+.botones-form{
+    width: 40%;
+}
+.btn-aceptar, .btn-cancelar{
+    width: 100%;
+    margin: 30px 0;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+    /* background-image: url(../img/2583259.jpg); */
+    background:linear-gradient(#0a3871, #111, #0a3871);
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+
+
+.ocultar{
+    display: none;
+
+}
+.ocultar2{
+    visibility: hidden;
+}
+
+.ocultarOpaco{
+    opacity: 0;
+    transition: 2s;
+    display: none;
+}
+
+.mostrar{
+    opacity: 1;
+    transition: 2s;
+}
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 65px;
+    }
+    .teclas{
+        display: block;
+    }
+}
+

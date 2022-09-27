@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ES" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/JuegoAhorcado.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Juego del ahorcado - ALURA - NEO - 2do Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+<h2 class="TituloJuego">ALURA - NEO - Desafio 2 Juego del Ahorcado</h2>
+<div class="Logo"><img src="img/Logo.png"; width="10%";></div>
+            <div id="Fondo">
+</head>
+
+<body>
+    
+    <main>
+        <section class="seccion1 ocultar">
+
+            <div class="contenedor-canvas">
+                <canvas></canvas>
+            </div>
+
+            <div class="cont_letras_correct">
+
+            </div>
+            <div class="cont_letras_incorrect">
+
+            </div>
+
+            <div class="teclas ocultar">
+                <img src="img/icon.png" alt="teclado" class="teclado" width="30%">
+            </div>
+
+            <div class="contenedor-botones">
+                <input type="button" class="btn-nuevo" value="Nuevo juego!">
+                <input type="button" class="btn-desistir" value="Desistir">
+            </div>
+        </section>
+
+        <section class="seccion2">
+           <div class="contenedor-botones-inicio">
+                <input type="button" class="btn-iniciar" value="Inicia Juego">
+            </div>
+        </section>
+        <br>
+        <div class="contenedor_footer">
+            <a href="https://github.com/pedro-manjarrez" target="_blank"><h4>Elaborado por JPMP</h4></a>
+        </div>
+    </main>
+    <footer>
+
+        
+    </footer>
+
+    <script src="js/funciones.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/principal.js"></script>
+</body>
+</html>
